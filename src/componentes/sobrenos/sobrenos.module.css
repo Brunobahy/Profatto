@@ -1,0 +1,150 @@
+.container{
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.info{
+    display: flex;
+    gap: 60px;
+}
+
+.container_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 35%;
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: var(--regular);
+    color: var(--verde-escuro);
+    border-bottom: 3px  var(--verde) solid;
+    padding-bottom: 10px;
+}
+
+.titulo b{
+    font-weight: inherit;
+    color: var(--verde);
+}
+
+.texto{
+    font-size: 20px;
+    font-weight: var(--light);
+    line-height: 30px;
+}
+
+.lista{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.item_numero{
+    color: var(--verde);
+    font-size: 31px;
+    font-weight: var(--extra-bold);
+}
+
+.item_texto{
+    font-size: 22px;
+    font-weight: var(--semi-bold);
+    color: var(--verde-escuro);
+}
+
+.botao{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--verde);
+    font-size: 16px;
+    font-weight: var(--semi-bold) ;
+    padding: 10px 40px;
+}
+
+.explica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.explica_titulo{
+    font-size: 40px;
+    font-weight: var(--regular);
+    color: var(--verde-escuro);
+    position: relative;
+}
+
+
+.explica_titulo b{
+    color: var(--verde);
+    font-weight: var(--regular);
+    
+}
+
+.explica_titulo::after{
+    content: "";
+    position: absolute;
+    background-color: var(--verde);
+    width: 50%;
+    height: 3px;
+    top:150%;
+    left: 25%;
+}
+
+.explica_lista{
+    display: flex;
+    width: 80%;
+    gap: 20px;
+}
+
+.explica_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explica_numero{
+    font-size: 56px;
+    font-weight: var(--bold);
+    color: #FFF;
+    width: 80px;
+    height: 80px;
+    background-color: var(--verde);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 10px 0 0 0;
+}
+
+.explica_containter_texto{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.explica_nome{
+    font-size: 30px;
+    color: var(--verde-escuro);
+    font-weight: var(--regular);
+}
+
+.explica_texto{
+    font-size: 20px;
+    color: #000;
+    font-weight: var(--light);
+    line-height: 25px;
+}

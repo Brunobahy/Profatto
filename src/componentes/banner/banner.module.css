@@ -1,0 +1,60 @@
+.banner{
+    background-image: url(./fundo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.back{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, #092820 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    padding: 20px;
+}
+.nome{
+    text-shadow:
+        /* 0px 0px 30px black, */
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 300;
+    /* background-color: red; */
+}
+
+
+
+.nome::after,.nome::before{
+    content: url(./Line.png);
+    overflow: hidden;
+    margin: 20px 40px;
+    align-self: center;
+    position: relative;
+    bottom: 100%;
+}
+
+.lista{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 100%;
+}
+
+.select{
+    background-color: #8B941F;
+}

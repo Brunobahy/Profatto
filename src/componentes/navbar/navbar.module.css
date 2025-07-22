@@ -1,0 +1,76 @@
+.container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_cima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    object-fit: contain;    
+}
+
+.contatos{
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+}
+
+.whats{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    color: #FFF;
+    font-weight: var(--light);
+    font-size: 20px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.rede_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.botao{
+    background-color: var(--verde);
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: #FFF;
+    padding: 0 10px;
+    font-weight: var(--semi_bold);
+    font-size: 15px;
+}
+
+.item a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.select a{
+    color: var(--verde);
+}

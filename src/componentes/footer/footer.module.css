@@ -1,0 +1,97 @@
+.rodape{
+    background-color: var(--verde-escuro);
+    width: 100%;
+    padding: 80px 180px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.logo{
+    object-fit: contain;
+    width: 250px;
+}
+
+
+.lista_rede{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px ;
+}
+
+.rede_item{
+    width: 25px;
+    height: 25px;
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.copy{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: var(--light);
+}
+
+.rodape_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.container_mapa{
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    gap: 11px;
+}
+
+.mapa_titulo{
+    font-weight: var(--semi-bold);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mapa_item{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: var(--light);
+    font-size: 18px;
+}
+
+.container_loja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 30%;
+    color: #FFF;
+    height: 100%;
+    gap: 10px;
+}
+
+.loja_titulo{
+    font-weight: var(--semi-bold);
+    font-size: 20px;
+}
+
+.loja_item{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-weight: var(--regular);
+}

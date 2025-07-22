@@ -95,3 +95,27 @@
     line-height: 30px;
     font-weight: var(--regular);
 }
+
+/* Mobile */
+@media (max-width: 1024px) {
+}
+
+/* Desktop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .rodape{
+        padding: 80px 90px 40px;
+    }
+    .rodape_nav{
+        gap: 0;
+    }
+    .container_logo{
+        margin-right: 90px;
+    }
+    .loja_item{
+        line-height: 25px;
+    }
+}
+
+/* Desktop Grande */
+@media (min-width: 1441px) {
+}

@@ -98,6 +98,48 @@
 
 /* Mobile */
 @media (max-width: 1024px) {
+    .rodape{
+            padding: 50px 20px 60px;
+            flex-direction: column;
+            position: relative;
+            gap: 20px;
+    }
+    .container_logo{
+        gap: 10px;
+        align-items: center;
+    }
+    .copy{
+        position: absolute;
+        bottom: 30px;
+        left: 25%;
+    }
+    .rodape_nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+    }
+    .container_mapa{
+        grid-row: 1;
+        grid-column: 1/3;
+        width: 100%;
+        align-items: center;
+    }
+    .container_loja{
+        width: 100%;
+    }
+    .loja_titulo{
+        align-self: center;
+    }
+    .loja_item{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    font-weight: var(--regular);
+    }
+    .item_texto{
+        margin-bottom: 5px;    
+    }
+
 }
 
 /* Desktop */
@@ -114,8 +156,4 @@
     .loja_item{
         line-height: 25px;
     }
-}
-
-/* Desktop Grande */
-@media (min-width: 1441px) {
 }

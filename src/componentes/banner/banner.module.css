@@ -58,3 +58,46 @@
 .select{
     background-color: #8B941F;
 }
+
+
+
+/* Mobile */
+@media (max-width: 1024px) {
+    .banner{
+        height: 50vh;
+    }
+    .nome{
+        font-size: 30px;
+        text-align: center;
+    }
+    .nome::after,.nome::before{
+    display: none;
+    }
+    .dot{
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1224px) {
+    .nome{
+        font-size: 30px;
+    }
+    .nome::after,.nome::before{
+        width: 30px;
+       margin: 0px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1225px) and (max-width: 1440px) {
+    .nome{
+        font-size: 40px;
+    }
+    .nome::after,.nome::before{
+        width: 30px;
+       margin: 15px 25px;
+    }
+    
+}

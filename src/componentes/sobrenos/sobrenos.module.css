@@ -9,6 +9,9 @@
     display: flex;
     gap: 60px;
 }
+.foto{
+    width: 50%;
+}
 
 .container_texto{
     display: flex;
@@ -49,6 +52,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+
 }
 
 .item_numero{
@@ -71,6 +75,16 @@
     font-size: 16px;
     font-weight: var(--semi-bold) ;
     padding: 10px 40px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+}
+
+.botao:active{
+    transform: scale(0.9);
 }
 
 .explica{
@@ -147,4 +161,175 @@
     color: #000;
     font-weight: var(--light);
     line-height: 25px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 1024px) {
+    .container{
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto{
+        width: 90%;
+    }
+    .container_texto{
+        width: 90%;
+        align-items: center;
+        gap: 30px;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .texto{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .lista{
+        flex-wrap: wrap;
+    }
+    .item_numero{
+        font-size: 20px;
+    }
+    .item_texto{
+        font-size: 14px;
+    }
+    .botao{
+        padding: 5px 10px;
+    }
+    .explica_titulo{
+        font-size: 25px;
+    }
+    .explica_titulo::after{
+        top: 100%;
+    }
+    .explica_lista{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .explica_numero{
+        height:70px;
+        width:70px;
+        padding-top: 15px;
+    }
+    .explica_containter_texto{
+        width: 70%;
+        gap: 10px;
+    }
+    .explica_nome{
+        font-size: 25px;
+    }
+    .explica_texto{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1224px) {
+  .foto{
+        object-fit: contain;
+        width: 50%;
+    }
+    .container_texto{
+        width: 40%;
+        justify-content: space-between;
+    }
+    .titulo{
+        padding-bottom: 2px;
+        font-size: 30px;
+    }
+    .texto{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .item_numero{
+        font-size: 20px;
+    }
+    .item_texto{
+        font-size: 14px;
+    }
+    .botao{
+        padding: 5px 10px;
+    }
+    .explica_titulo::after{
+        top: 120%;
+    }
+    .explica_lista{
+        width: 90%;
+    }
+    .explica_numero{
+        height:70px;
+        width:70px;
+        padding-top: 15px;
+    }
+    .explica_containter_texto{
+        width: 70%;
+        gap: 10px;
+    }
+    .explica_nome{
+        font-size: 25px;
+    }
+    .explica_texto{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1225px) and (max-width: 1440px) {
+    .foto{
+        object-fit: contain;
+        width: 50%;
+    }
+    .container_texto{
+        width: 35%;
+        justify-content: space-between;
+    }
+    .titulo{
+        padding-bottom: 2px;
+    }
+    .texto{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .item_numero{
+        font-size: 25px;
+    }
+    .item_texto{
+        font-size: 15px;
+    }
+    .botao{
+        padding: 5px 20px;
+    }
+    .explica_titulo::after{
+        top: 120%;
+    }
+    .explica_numero{
+        height:70px;
+        width:70px;
+        padding-top: 15px;
+    }
+    .explica_containter_texto{
+        width: 70%;
+        gap: 10px;
+    }
+    .explica_nome{
+        font-size: 25px;
+    }
+    .explica_texto{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }

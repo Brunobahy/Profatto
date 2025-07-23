@@ -1,32 +1,32 @@
-.container{
+.container {
     width: 70%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.container_cima{
+.container_cima {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lista{
+.lista {
     display: flex;
     justify-content: space-around;
 }
 
-.logo{
-    object-fit: contain;    
+.logo {
+    object-fit: contain;
 }
 
-.contatos{
+.contatos {
     display: flex;
     justify-content: space-between;
     width: 32%;
 }
 
-.whats{
+.whats {
     display: flex;
     gap: 10px;
     align-items: baseline;
@@ -35,14 +35,14 @@
     font-size: 20px;
 }
 
-.redes{
+.redes {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 5px;
 }
 
-.rede_logo{
+.rede_logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,9 +51,18 @@
     height: 25px;
     border-radius: 100%;
     overflow: hidden;
+    transition: all 200ms ease-in-out;
 }
 
-.botao{
+.rede_logo:hover {
+    transform: scale(1.1);
+}
+
+.rede_logo:active {
+    transform: scale(0.9);
+}
+
+.botao {
     background-color: var(--verde);
     border-radius: 5px;
     border: none;
@@ -62,15 +71,93 @@
     padding: 0 10px;
     font-weight: var(--semi_bold);
     font-size: 15px;
+    transition: all 200ms ease-in-out;
 }
 
-.item a{
+.botao:hover {
+    transform: scale(1.1);
+}
+
+.botao:active {
+    transform: scale(0.9);
+}
+
+
+.item a {
     text-decoration: none;
     color: #FFF;
     font-size: 22px;
     text-transform: capitalize;
 }
 
-.select a{
+.select a {
     color: var(--verde);
+}
+
+
+/* Mobile */
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .container_cima {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 50%;
+        object-fit: contain;
+    }
+    .contatos{
+        width: fit-content;
+        align-items: center;
+        gap: 10px;
+    }
+    .whats{
+        font-size: 20px;
+    }
+    .redes{
+        display: none;
+    }
+    .container_lista{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lista{
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+    }
+    .item a{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1224px) {
+    .contatos {
+        width: 50%;
+    }
+
+    .item a {
+        font-size: 18px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1225px) and (max-width: 1440px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .contatos {
+        width: 35%;
+    }
 }

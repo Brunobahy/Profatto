@@ -1,5 +1,5 @@
 .container{
-    padding: 80px 50px;
+    padding: 80px 50px 40px;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -57,12 +57,12 @@
 
 .item_numero{
     color: var(--verde);
-    font-size: 31px;
+    font-size: 30px;
     font-weight: var(--extra-bold);
 }
 
 .item_texto{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: var(--semi-bold);
     color: var(--verde-escuro);
 }
@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 
 .explica_titulo{
@@ -120,6 +120,8 @@
 
 .explica_lista{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     gap: 20px;
 }

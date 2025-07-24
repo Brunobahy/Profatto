@@ -74,6 +74,8 @@
     }
     .campo{
         width: 100%;
+        margin-right: 0px;
+        
     }
     .botao{
         width: 100%;
@@ -84,11 +86,7 @@
  .form{
     padding: 40px 90px 10px;
  }
- .campo{
-    margin-right: 0px;
- 
- }
-    
+  
 }
 
 /* Desktop */
